@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Luxe Vendu PRO</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<header>
+  <h1>LUXE VENDU PRO</h1>
+  <p class="slogan">Le luxe n’attend pas… il se déclenche.</p>
+</header>
+
+<section class="hero">
+  <h2>Bienvenue dans ta boutique premium</h2>
+  <p>Produits physiques & digitaux • Commande instantanée • WhatsApp automatique</p>
+</section>
+
+<!-- PRODUITS -->
+<div id="products" class="grid"></div>
+
+<!-- FORMULAIRE -->
+<div id="modal" class="modal">
+  <div class="box">
+    <h3>Finaliser la commande</h3>
+
+    <input id="name" placeholder="Nom complet" />
+    <input id="city" placeholder="Ville" />
+    <input id="address" placeholder="Quartier / Adresse" />
+    <textarea id="details" placeholder="Détails supplémentaires"></textarea>
+
+    <button onclick="sendOrder()">COMMANDER MAINTENANT</button>
+    <button class="danger" onclick="closeModal()">Fermer</button>
+  </div>
+</div>
+
+<!-- ADMIN -->
+<div id="admin" class="modal">
+  <div class="box">
+    <h3>Dashboard Admin</h3>
+    <div id="stats"></div>
+    <div id="orders"></div>
+    <button onclick="closeAdmin()">Fermer</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
